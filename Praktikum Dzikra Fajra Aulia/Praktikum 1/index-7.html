@@ -1,0 +1,262 @@
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Kelompok 7 - Desain UI/UX PemWeb</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #f2f2f2;
+            color: #222;
+        }
+
+        .container {
+            width: 90%;
+            max-width: 1000px;
+            margin: 30px auto;
+            background-color: white;
+            border: 1px solid #ccc;
+        }
+
+        /* HEADER */
+        header {
+            text-align: center;
+            background-color: #ddd;
+            padding: 25px;
+            border-bottom: 1px solid #aaa;
+        }
+
+        header h1 {
+            margin: 5px 0;
+            font-size: 28px;
+        }
+
+        header p {
+            margin: 5px 0;
+            color: #555;
+        }
+
+        /* INTRO */
+        .intro {
+            margin: 20px;
+            padding: 15px;
+            border: 1px solid #bbb;
+            background-color: #fafafa;
+        }
+
+        .intro h2 {
+            margin-top: 0;
+        }
+
+        /* BIODATA */
+        .anggota-container {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 15px;
+            margin: 20px;
+        }
+
+        .anggota {
+            border: 1px solid #bbb;
+            padding: 15px;
+            background-color: white;
+        }
+
+        .biodata {
+            display: flex;
+            gap: 15px;
+        }
+
+        .foto {
+            width: 120px;
+            height: 120px;
+            border: 1px solid #aaa;
+            background-color: #eee;
+
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-shrink: 0;
+        }
+
+        .foto img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .data h3 {
+            margin: 0 0 10px 0;
+        }
+
+        .data p {
+            margin: 5px 0;
+        }
+
+        /* FOOTER */
+        footer {
+            text-align: center;
+            padding: 15px;
+            background-color: #ddd;
+            border-top: 1px solid #aaa;
+        }
+
+        /* RESPONSIVE */
+        @media (max-width: 700px) {
+            .anggota-container {
+                grid-template-columns: 1fr;
+            }
+
+            .biodata {
+                flex-direction: column;
+            }
+
+            .foto {
+                width: 100%;
+                height: 180px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+
+        <!-- HEADER -->
+        <header>
+            <h1>👥 Kelompok 7</h1>
+            <p>Desain UI/UX & Pemrograman Web</p>
+        </header>
+
+
+        <!-- INTRO -->
+        <section class="intro">
+            <h2>Intro</h2>
+
+            <p>
+                Selamat datang di website Kelompok 7,
+                ini adalah website praktikum desain UI/UX
+                pertemuan ke 3.
+            </p>
+        </section>
+
+
+        <!-- BIODATA ANGGOTA -->
+        <section class="anggota-container">
+
+            <!-- ANGGOTA 1 -->
+            <div class="anggota">
+                <div class="biodata">
+
+                    <div class="foto">
+                        <img src="SAVE_20261023_230528.jpg" alt="Foto Faathih">
+                    </div>
+
+                    <div class="data">
+                        <h3>Faathih</h3>
+
+                        <p><b>Nama Panjang:</b> Faathih Syaqiq Al Maruf</p>
+                        <p><b>NIM:</b> 0110226055</p>
+                        <p><b>Prodi:</b> Teknik Informatika 01</p>
+                    </div>
+
+                </div>
+            </div>
+
+
+            <!-- ANGGOTA 2 -->
+            <div class="anggota">
+                <div class="biodata">
+
+                    <div class="foto">
+                        <img src="SAVE_20261023_230500.jpg" alt="Foto Fajra">
+                    </div>
+
+                    <div class="data">
+                        <h3>Fajra</h3>
+
+                        <p><b>Nama Asli:</b> Dzikra Fajra Aulia</p>
+                        <p><b>NIM:</b> 0110226048</p>
+                        <p><b>Prodi:</b> Teknik Informatika 01</p>
+                    </div>
+
+                </div>
+            </div>
+
+
+            <!-- ANGGOTA 3 -->
+            <div class="anggota">
+                <div class="biodata">
+
+                    <div class="foto">
+                        <img src="SAVE_20261023_230632.jpg" alt="Foto Erina">
+                    </div>
+
+                    <div class="data">
+                        <h3>Erina</h3>
+
+                        <p><b>Nama Panjang:</b> Erina Melati Batubara</p>
+                        <p><b>NIM:</b> 0110226073</p>
+                        <p><b>Prodi:</b> Teknik Informatika 01</p>
+                    </div>
+
+                </div>
+            </div>
+
+
+            <!-- ANGGOTA 4 -->
+            <div class="anggota">
+                <div class="biodata">
+
+                    <div class="foto">
+                        <img src="SAVE_20261023_230616.jpg" alt="Foto Abyan">
+                    </div>
+
+                    <div class="data">
+                        <h3>Abyan</h3>
+
+                        <p><b>Nama Panjang:</b> Dzakwan Abyan Zubair</p>
+                        <p><b>NIM:</b> 0110226093</p>
+                        <p><b>Prodi:</b> Teknik Informatika 01</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- ANGGOTA 5 -->
+            <div class="anggota">
+                <div class="biodata">
+
+                    <div class="foto">
+                        <img src="SAVE_20261023_230543.jpg" alt="Foto Fahri">
+                    </div>
+
+                    <div class="data">
+                        <h3>Fahri</h3>
+
+                        <p><b>Nama Panjang:</b> Fahri Abrian Herdiansyah</p>
+                        <p><b>NIM:</b> 0110226142</p>
+                        <p><b>Prodi:</b> Teknik Informatika 01</p>
+                    </div>
+
+                </div>
+            </div>
+
+        </section>
+
+
+        <!-- FOOTER -->
+        <footer>
+            <p>Kelompok 7 - Desain UI/UX PemWeb</p>
+        </footer>
+
+    </div>
+
+</body>
+</html>
